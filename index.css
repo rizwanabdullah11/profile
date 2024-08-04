@@ -492,21 +492,98 @@ body {
         height: 40px;
         font-size: 20px;
     }
-    .right .skills{
-        margin-top: 15vh;
-        height: 75vh;
-        padding: 10px;
-        box-sizing: border-box;
+    .skills {
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 20px;
+    }
+
+    .skills h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align the columns */
+    }
+
+    .skills-column {
+        width: 90%; /* Make columns take most of the screen width */
+        margin-bottom: 20px; /* Add space between columns */
+    }
+
+    .skill-item {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align the content */
+        text-align: center; /* Center text */
+    }
+
+    .skill-item img {
+        margin-left: 0; /* Reset left margin */
+        margin-bottom: 10px; /* Add space between image and text */
+    }
+
+    .skill-item p {
+        margin-left: 0; /* Reset left margin */
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+
+    .project h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+    }
+
+    .project-container {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .project-box {
+        padding: 15px; /* Reduce padding inside the box */
+    }
+
+    .project-box h2 {
+        font-size: 1.3em; /* Adjust heading font size */
+    }
+
+    .project-box p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+
+    .certification h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+    }
+
+    .cert-container {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .box {
+        padding: 15px; /* Reduce padding inside the box */
+    }
+
+    .box h2 {
+        font-size: 1.3em; /* Adjust heading font size */
+    }
+
+    .box p {
+        font-size: 0.9em; /* Adjust paragraph font size */
+    }
+    .contactme{
         background-color: aquamarine;
     }
-    .skills h1{
-        font-size: 35px;
+    .contactme h1 {
+        font-size: 2rem;
     }
-    .skills-column h2{
-        font-size: 25px;
+
+    .form-color {
+        padding: 1.5rem;
+        background-color: aqua;
     }
-    .skill-item 
-    .skills .skills-column{
-        height: 60vh;
+
+    .form-color label,
+    .form-color input,
+    .form-color textarea,
+    .form-color .btn {
+        font-size: 0.9rem;
     }
 }

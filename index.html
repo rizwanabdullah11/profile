@@ -23,7 +23,7 @@
             </nav>
         </div>
         <div class="right">
-            <div class="about">
+            <div id="about" class="about">
                 <h1><span class="first-name">Rizwan</span> <span class="last-name">Abdullah</span></h1>
                 <h2>Front-end Developer</h2>
                 <p>Phone: +92 330-8067161<br><a href="mailto:rizwan.abdullah193@gmail.com">E-mail: rizwan.abdullah193@gmail.com</a></p>
@@ -35,7 +35,7 @@
                     <a href="https://www.facebook.com/rizwan.abdullah.5458/" class="fa fa-facebook"></a>
                 </div>
             </div>
-            <div class="skills">
+            <div id="skills" class="skills">
                 <h1>SKILLS</h1>
                 <div class="skills-container">
                     <div class="skills-column">
@@ -62,53 +62,53 @@
                         </div>
                     </div>
                     <div class="skills-column">
-                        <h2>Backend</h2>
+                        <h2>Programming Languages</h2>
                         <div class="skill-item">
-                            <img src="./node.jpg" alt="node">
-                            <p>Node</p>
+                            <img src="./JavaScript.jpg" alt="node">
+                            <p>JavaScript</p>
                         </div>
                         <div class="skill-item">
-                            <img src="./express.jpg" alt="express">
-                            <p>Express</p>
+                            <img src="./c++.jpg" alt="express">
+                            <p>C++</p>
                         </div>
                         <div class="skill-item">
-                            <img src="./laravel.jpg" alt="laravel">
-                            <p>Laravel</p>
+                            <img src="./python.jpg" alt="laravel">
+                            <p>Python</p>
                         </div>
                         <div class="skill-item">
-                            <img src="./django.jpg" alt="django">
-                            <p>Django</p>
+                            <img src="./csharp.jpg" alt="django">
+                            <p>C#</p>
                         </div>
                         <div class="skill-item">
-                            <img src="./next.jpg" alt="next">
-                            <p>Next.js</p>
+                            <img src="./flutter.jpg" alt="next">
+                            <p>Flutter</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Projects-->
-            <div class="project">
+            <div id="project" class="project">
                 <h1>PROJECTS</h1>
                 <div class="project-container">
                     <div class="project-box">
-                        <img src="./project1.jpg" alt="Image 3">
+                        <img src="./rizwan.jpg" alt="Image 4">
                         <h2>Rizwan Portfolio</h2>
                         <p>April 2023</p>
                     </div>
                     <div class="project-box">
-                        <img src="./project1.jpg" alt="Image 4">
+                        <img src="./project1.jpg" alt="Image 3">
                         <h2> AU-Verse (Flutter)</h2>
                         <p>University apps are vital for students, faculty, and staff, offering easy access to schedules, 
                             grades, maps, faculty contacts, and event calendars. They streamline communication and 
                             organization, enhancing the overall university experience.</p>
                     </div>
                     <div class="project-box">
-                        <img src="./project1.jpg" alt="Image 4">
-                        <h2> Arkan-Group Website (React.js)</h2>
-                        <p> Full Stack Semester Project</p>
+                        <img src="./medicine.JPG" alt="Image 2" >
+                        <h2>Medicine Recommendation System</h2>
+                        <p>Hospitals face data overload in patient health records. Recommender systems combined with machine learning can simplify data, aiding decision-making. A hybrid system can personalize doctor recommendations, improving patient care continuity and reducing healthcare costs.</p>
                     </div>
                     <div class="project-box">
-                        <img src="./project1.jpg" alt="Image 4">
+                        <img src="./rna.JPG" alt="Image 1">
                         <h2> RNA CAR RENTAL (.Net Desktop App)</h2>
                         <p>Effortlessly manage your car rental fleet with our Desktop App. Add cars, update availability, and
                             generate rental slips for streamlined operations, ensuring seamless management from start to 
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <!--Education-->
-            <div class="education">
+            <div id="education" class="education">
                 <h1>EDUCATION</h1>
                 <div class="education-item">
                     <div class="degree-info">
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <!--Certification-->
-            <div class="certification">
+            <div id="certifications" class="certification">
                 <h1>CERTIFICATIONS</h1>
                 <div class="cert-container">
                     <div class="box">
@@ -174,21 +174,32 @@
                     </div>
                 </div>
             </div>
-            <div class="contactme">
-                <h1>CONTACT ME</h1>
-                <form class="form-color">
-                    <label>Your Name</label>
-                    <input type="text">
-                    <label>Email</label>
-                    <input type="email">
-                    <label>Subject</label>
-                    <input type="text">
-                    <label>Message</label>
-                    <textarea rows="6" placeholder="Type your message here"></textarea>
-                    <button class="btn">Submit</button>
+            <!--Contact-->
+            <div id="contact" class="contactme">
+                <h1>Contact Me</h1>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
