@@ -58,20 +58,19 @@ body {
 
 .right {
     width: 75%;
-    padding: 50px;
-    margin-top: 70px;
+    height: 780vh;
     box-sizing: border-box;
     margin-left: 25%;
-    border-bottom: #2d2f7a solid 1px;
 }
 
-.right .about {
+.about {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
+    border-bottom: #2d2f7a solid 1px;
 }
 
 @keyframes fade {
@@ -111,12 +110,13 @@ body {
 .right .about h1 {
     animation: fade 3s infinite;
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 13%;
     color: #2d2f7a;
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
     gap: 20px;
+    margin-left: 5%;
 }
 
 .right .about .first-name {
@@ -131,6 +131,7 @@ body {
     font-size: 30px;
     margin-top: 10px;
     color: #888888;
+    margin-left: 5%;
 }
 
 .right .about p {
@@ -138,6 +139,7 @@ body {
     margin-top: 10px;
     color: black;
     justify-content: end;
+    margin-left: 5%;
 }
 
 .right .about a {
@@ -148,7 +150,7 @@ body {
 .right .social-media {
     display: flex;
     gap: 20px;
-    margin-left: 20px;
+    margin-left: 10%;
 }
 
 .right .social-media a {
@@ -245,14 +247,16 @@ body {
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px;
+    width: 95%;
+    margin-left: 30px;
 }
 
 .project-box {
     background: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-shadow: 0px 0px 10px #2d2f7a;
+    border-radius: 1rem;
     text-align: center;
 }
 
@@ -344,15 +348,17 @@ body {
 .cert-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 40px;
+    width: 95%;
+    margin-left: 30px;
 }
 
 .box {
     background: white;
-    border: 1px solid #ccc;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0px 0px 10px #2d2f7a;
+    border-radius: 1rem;
 }
 
 .box img {
@@ -376,7 +382,6 @@ body {
 .contactme {
     width: 100%;
     height: 100vh;
-    margin-top: 30px;
     border-bottom: #2d2f7a solid 1px;
 }
 
@@ -436,6 +441,8 @@ body {
 .form-color .btn:hover {
     color: white;
 }
+
+
 
 @media only screen and (max-device-width: 600px) {
     .left {
