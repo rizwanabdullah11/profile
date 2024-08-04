@@ -220,7 +220,7 @@ body {
     height: 75px;
     margin-left: 3rem;
     border-radius: 50%;
-    border-color: #2d2f7a;
+    border-color: #2d2f7a solid 50px;
 }
 
 .skill-item p {
@@ -262,7 +262,7 @@ body {
 
 .project-box img {
     width: 100%;
-    height: auto;
+    height: 400px;
     max-height: 300px;
 }
 
